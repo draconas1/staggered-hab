@@ -140,6 +140,27 @@ habitat_0 = {
 					}
 				}
 				
+				if = {
+					limit = {
+						fromfrom.planet = {
+							is_star = yes
+						}
+					}
+					random_tile = {
+						limit = {
+							num_adjacent_tiles = 2
+							has_blocker = no
+						}
+						
+						set_deposit = "d_rich_energy_deposit"
+
+						every_neighboring_tile = {
+							set_deposit = "d_rich_energy_deposit"
+						}
+					}
+				}
+				
+				
 				while = {
 					limit = {
 						any_tile = { has_blocker = no }
@@ -161,8 +182,8 @@ habitat_0 = {
 				
 				random_tile = {
 					limit = {
+						num_adjacent_tiles = 4
 						not{
-							num_adjacent_tiles < 4
 							any_neighboring_tile {
 								num_adjacent_tiles < 3
 							}
