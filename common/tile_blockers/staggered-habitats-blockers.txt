@@ -1,5 +1,5 @@
 
-stag_hab_unbuilt_habitat = {
+tb_stag_hab_unbuilt_habitat = {
 	time = 180
 	cost = {
 		energy = 50
@@ -13,7 +13,7 @@ stag_hab_unbuilt_habitat = {
 	}
 }
 
-stag_hab_unbuilt_habitat_voidborn = {
+tb_stag_hab_unbuilt_habitat_voidborn = {
 	time = 180
 	cost = {
 		energy = 150
@@ -29,7 +29,7 @@ stag_hab_unbuilt_habitat_voidborn = {
 	prerequisites = { "tech_stag_hab_increase_size1" }
 }
 
-stag_hab_unbuilt_habitat_master_builder = {
+tb_stag_hab_unbuilt_habitat_master_builder = {
 	time = 180
 	cost = {
 		energy = 150

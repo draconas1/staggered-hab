@@ -4,8 +4,7 @@ tech_stag_hab_increase_size1 = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tech_starbase_3
+	weight = @tier3cost1
 	
 	potential = {
 		 has_ascension_perk = ap_voidborn
@@ -55,11 +54,10 @@ tech_stag_hab_increase_size2 = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tech_starbase_3
+	weight = @tier3cost1
 	
 	potential = {
-		 has_ascension_perk = master_builders
+		 has_ascension_perk = ap_master_builders
 	}
 	
 	weight_groups = {

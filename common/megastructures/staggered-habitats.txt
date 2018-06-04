@@ -6,23 +6,15 @@ habitat_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 1800
+	build_time = 18
 	build_cost = {
-		minerals = 500
-		influence = 50
+		minerals = 50
+		influence = 5
 	}
 	construction_blocks_others = no
 
 	prerequisites = {
-		"tech_starbase_3"
-	}
-		
-	potential = {
-		OR = {
-			has_civic = civic_diadochi
-			has_civic = civic_great_khans_legacy
-			has_country_flag = democratic_khanate_flag
-		}
+		"tech_starbase_1"
 	}
 
 	possible = {
@@ -122,47 +114,41 @@ habitat_0 = {
 						remove_blocker = yes
 					}
 				}
+				
+				random_tile = {
+					limit = {					
+						num_adjacent_tiles = 2
+					}
+					
+					set_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
+
+					every_neighboring_tile = {
+						set_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
+					}
+				}
+				
+				random_tile = {
+					limit = {
+						num_adjacent_tiles = 2
+						has_blocker = no
+					}
+					
+					set_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
+
+					every_neighboring_tile = {
+						set_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
+					}
+				}
+				
 				while = {
 					limit = {
 						any_tile = { has_blocker = no }
 					}
 					random_tile = {
 						limit = { has_blocker = no }
-						set_blocker = "stag_hab_unbuilt_habitat"
+						set_blocker = "tb_stag_hab_unbuilt_habitat"
 					}
 				}
-				
-				random_tile = {
-					limit = {						
-							any_neighboring_tile {
-								num_adjacent_tiles < 3
-							}							
-					}
-					
-					set_blocker = "stag_hab_unbuilt_habitat_voidborn"
-
-					every_neighboring_tile = {
-						set_blocker = "stag_hab_unbuilt_habitat_voidborn"
-					}
-				}
-				
-				random_tile = {
-					limit = {						
-							any_neighboring_tile {
-								and {
-									num_adjacent_tiles < 3
-									has_blocker = no
-								}
-							}							
-					}
-					
-					set_blocker = "stag_hab_unbuilt_habitat_master_builder"
-
-					every_neighboring_tile = {
-						set_blocker = "stag_hab_unbuilt_habitat_master_builder"
-					}
-				}
-							
 				
 				if = {
 					limit = {
@@ -173,7 +159,17 @@ habitat_0 = {
 					copy_orbital_tile = fromfrom.planet
 				}
 				
-				change_planet_size = 2
+				random_tile = {
+					limit = {
+						not{
+							num_adjacent_tiles < 4
+							any_neighboring_tile {
+								num_adjacent_tiles < 3
+							}
+						}
+					}
+					remove_blocker = yes
+				}
 
 				set_planet_flag = megastructure
 				set_planet_flag = habitat

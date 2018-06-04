@@ -1,6 +1,6 @@
 ﻿l_english:
 
- ### Megastructures Revamped
+ ### Staggered Habitat text
   
  requires_not_uncolonized_planet:1 "$TRIGGER_FAIL$Must be built on a colonized planet."
  requires_synch_orbit:0 "Must be built in synchronous orbit."
@@ -11,27 +11,13 @@
  requires_atmosphere:0 "Must be built in an atmosphere."
  requires_corona:0 "Must be in a stellar corona."
  requires_photosphere:0 "Must be within a star itself."
- 
- tb_unbuilt_habitat:0 "£blocker  Unbuilt Habitat Station"
- tb_unbuilt_habitat_desc:0 "Empty space just waiting additional habitat construction"
- tb_unbuilt_corona:0 "£blocker  Unbuilt Coronal Habitat Station"
- tb_unbuilt_corona_desc:0 "Space just inside the stellar corona, waiting additional habitation construction"
- tb_unbuilt_photosphere:0 "£blocker  Unbuilt Photosphere Habitat Station"
- tb_unbuilt_photosphere_desc:0 "A seemingly unlikely place to build a habitat"
- tb_unbuilt_atmosphere:0 "£blocker  Unbuilt Atmospheric Habitat Station"
- tb_unbuilt_atmosphere_desc:0 "A possible habitat location just inside the planetary atmosphere."
- tb_unbuilt_asteroid:0 "£blocker  Unbuilt Asteroid Habitat Station"
- tb_unbuilt_asteroid_desc:0 "A possible habitat location directly on the asteroid surface."
 
- pc_habitat_revamp:0 "Orbital Habitat"
- pc_habitat_revamp_desc:0 "An artificial deep-space arcology offering planet-like, if decidedly urban, living conditions. Hydroponics and advanced filtering technologies make it near-self-sustaining, and station-borne facilities can mine the station's host planet for raw materials."
- pc_habitat_revamp_sp:0 "Orbital Habitat"
- pc_habitat_revamp__sp_desc:0 "An artificial deep-space arcology offering planet-like, if decidedly urban, living conditions. Hydroponics and advanced filtering technologies make it near-self-sustaining, and station-borne facilities can mine the station's host planet for raw materials."
-
- pc_habitat_revamp_tile:0 "Orbital Habitat"
- pc_habitat_revamp_tile_desc:0 "An artificial deep-space arcology offering planet-like, if decidedly urban, living conditions. Hydroponics and advanced filtering technologies make it near-self-sustaining, and station-borne facilities can mine the station's host planet for raw materials."
- pc_habitat_revamp_sp_tile:0 "Orbital Habitat"
- pc_habitat_revamp_sp_tile_desc:0 "An artificial deep-space arcology offering planet-like, if decidedly urban, living conditions. Hydroponics and advanced filtering technologies make it near-self-sustaining, and station-borne facilities can mine the station's host planet for raw materials."
+ tb_stag_hab_unbuilt_habitat:0 "£blocker  Unbuilt Habitat Station"
+ tb_stag_hab_unbuilt_habitat_desc:0 "Empty space just waiting additional habitat construction"
+ tb_stag_hab_unbuilt_habitat_voidborn:0 "£blocker  Unbuilt Habitat Station (structually unwise)"
+ tb_stag_hab_unbuilt_habitat_voidborn_desc:0 "Only a race that was Void Born could build here"
+ tb_stag_hab_unbuilt_habitat_master_builder:0 "£blocker  Dangerous structural area"
+ tb_stag_hab_unbuilt_habitat_master_builder_desc:0 "Truly we would need to be Master Builders to build in this section without tearing the habitat apart"
 
  sr_low_orbit:0 "Low Orbit"
  sr_low_orbit_desc:0 "This habitat location is very close to the parent body, making it ideal for some uses."
