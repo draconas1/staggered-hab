@@ -44,3 +44,36 @@ tb_stag_hab_unbuilt_habitat_master_builder = {
 	
 	prerequisites = { "tech_stag_hab_increase_size2" }
 }
+
+tb_stag_hab_near_solar = {
+	time = 180
+	cost = {
+		energy = 150
+		minerals = 500
+	}
+	
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+	
+	prerequisites = { "tech_stag_hab_near_solar" }
+}
+
+tb_stag_hab_asteroid = {
+	time = 180
+	cost = {
+		energy = 150
+		minerals = 500
+	}
+	
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+	
+	prerequisites = { "tech_stag_hab_asteroid_mining" }
+}
+

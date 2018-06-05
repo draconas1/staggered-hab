@@ -1,0 +1,17 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+d_stag_hab_sync_orbit = {
+	resources = {
+		sr_stag_hab_sync_orbit = 1
+	}
+	is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+	}
+}

@@ -1,0 +1,853 @@
+# buildings for habitats
+
+
+
+#special buildings for colonised habitats
+building_stag_hab_space_elevator = {
+	base_buildtime = 500
+	planet_unique = yes
+	
+	cost = {
+		minerals = 750		
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}	
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+		custom_tooltip = {
+			fail_text = "requires_sync_orbit"
+			tile = {
+				has_resource = {
+					type = sr_stag_hab_sync_orbit
+					amount > 0
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		minerals = 4
+	}
+	
+	planet_modifier  = {
+		tile_resource_minerals_mult = 0.20
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_minerals_add = 3
+		tile_building_resource_food_add = 2
+		tile_building_resource_energy_add = 2
+	}
+	
+	required_resources = {
+		energy = 5
+	}
+	
+	prerequisites = {
+		"tech_mineral_processing_2"
+	}
+}
+
+building_stag_hab_trading_hub = {
+	base_buildtime = 500
+	planet_unique = yes
+	
+	cost = {
+		minerals = 750		
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}	
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+		custom_tooltip = {
+			fail_text = "requires_sync_orbit"
+			tile = {
+				has_resource = {
+					type = sr_stag_hab_sync_orbit
+					amount > 0
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		energy = 4
+	}
+	
+	planet_modifier  = {
+		tile_resource_energy_mult = 0.10
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_energy_add = 3
+	}
+	
+	prerequisites = {
+		"tech_galactic_markets"
+	}
+}
+
+building_stag_hab_weather_control = {
+	base_buildtime = 500
+	planet_unique = yes
+	
+	cost = {
+		minerals = 750		
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}	
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+		custom_tooltip = {
+			fail_text = "requires_sync_orbit"
+			tile = {
+				has_resource = {
+					type = sr_stag_hab_sync_orbit
+					amount > 0
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		food = 4
+	}
+	
+	planet_modifier  = {
+		tile_resource_food_mult = 0.20
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_food_add = 3
+	}
+	
+	required_resources = {
+		energy = 5
+	}
+	
+	prerequisites = {
+		"tech_nano_vitality_crops"
+	}
+}
+
+building_stag_hab_science_centre = {
+	base_buildtime = 500
+	planet_unique = yes
+	
+	cost = {
+		minerals = 1000		
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}	
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+		custom_tooltip = {
+			fail_text = "requires_sync_orbit"
+			tile = {
+				has_resource = {
+					type = sr_stag_hab_sync_orbit
+					amount > 0
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = 3
+		physics_research = 3
+		society_research = 3
+	}
+	
+	planet_modifier  = {
+		tile_resource_engineering_research_mult = 0.05
+		tile_resource_physics_research_mult = 0.05
+		tile_resource_physics_research_mult = 0.05
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_engineering_research_add = 1
+		tile_building_resource_physics_research_add = 1
+		tile_building_resource_society_research_add = 1
+	}
+	
+	required_resources = {
+		energy = 10
+	}
+	
+	prerequisites = {
+		"tech_global_research_initiative"
+	}
+}
+
+building_stag_hab_propaganda_centre = {
+	base_buildtime = 500
+	planet_unique = yes
+	
+	cost = {
+		minerals = 750		
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}	
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+		custom_tooltip = {
+			fail_text = "requires_sync_orbit"
+			tile = {
+				has_resource = {
+					type = sr_stag_hab_sync_orbit
+					amount > 0
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		unity = 4
+	}
+	
+	planet_modifier  = {
+		pop_government_ethic_attraction = 0.2
+		tile_building_resource_unity_mult = 0.05
+		planet_unrest_mult = -0.1
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_unity_add = 1
+	}
+	
+	required_resources = {
+		energy = 5
+	}
+	
+	prerequisites = {
+		"tech_galactic_benevolence"
+	}
+}
+
+
+
+# new low quality buildings for starting habitats
+
+building_stag_hab_astro_mining_facility_1 = {
+	base_buildtime = 150
+	
+	cost = {
+		minerals = @b1cost
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		not = {
+			has_ascension_perk = ap_voidborn
+		}
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		minerals = 1
+	}
+	
+	required_resources = {
+		energy = @b1upkeep
+	}
+	
+	prerequisites = {
+		"tech_stag_hab_asteroid_mining"
+	}
+	
+	upgrades = {
+		building_stag_hab_astro_mining_facility
+	}
+}
+
+building_stag_hab_solar_power_processor_1 = {
+	base_buildtime = 150
+	
+	cost = {
+		minerals = @b1cost
+	}
+	
+	potential = {
+		planet = {		
+			is_planet_class = pc_habitat
+			has_building = "building_hab_capital"
+			solar_system = {
+				custom_tooltip = {
+					fail_text = "requires_no_black_hole_or_dyson_sphere"
+					NOR = {
+						is_star_class = sc_black_hole
+						has_megastructure = dyson_sphere_3
+						has_megastructure = dyson_sphere_4
+						has_megastructure = dyson_sphere_5
+					}
+				}				
+			}
+		}
+		not = {
+			has_ascension_perk = ap_voidborn
+		}	
+	}
+	
+	destroy_if = {
+		planet = {		
+			solar_system = {
+				OR = {
+					is_star_class = sc_black_hole	
+					has_megastructure = dyson_sphere_3
+					has_megastructure = dyson_sphere_4
+					has_megastructure = dyson_sphere_5
+				}
+			}
+		}
+		not = {
+			has_ascension_perk = ap_voidborn
+		}	
+	}
+	
+	produced_resources = {
+		energy = 3
+	}
+	
+	upgrades = {
+		building_stag_hab_solar_power_processor
+	}
+}
+
+building_stag_hab_agri_bay_1 = {
+	base_buildtime = 150
+	
+	cost = {
+		minerals = @b1cost
+	}
+	
+	potential = {
+		NOT =  { owner = { has_authority = auth_machine_intelligence } }
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		not = {
+			has_ascension_perk = ap_voidborn
+		}	
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		food = 2
+	}
+	
+	required_resources = {
+		energy = @b1upkeep
+	}
+	
+	upgrades = {
+		building_stag_hab_agri_bay
+	}
+}
+
+building_stag_hab_laboratory_module_1 = {
+	base_buildtime = 150
+	
+	cost = {
+		minerals = @b1cost
+	}
+	
+	potential = {
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		not = {
+			has_ascension_perk = ap_voidborn
+		}	
+	}
+
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = 1
+		physics_research = 1
+		society_research = 1
+	}
+	
+	required_resources = {
+		energy = @b1upkeep
+	}
+	
+	upgrades = {
+		building_stag_hab_laboratory_module
+	}
+}
+
+building_stag_hab_cultural_center_1 = {
+	base_buildtime = 150
+	planet_unique = yes
+	
+	cost = {
+		minerals = 120
+	}
+	
+	potential = {
+		NOT = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		not = {
+			has_ascension_perk = ap_voidborn
+		}	
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	destroy_if = {
+		exists = owner
+		owner = { has_authority = auth_machine_intelligence }
+	}
+	
+	produced_resources = {		
+		unity = 1
+	}
+	
+	planet_modifier = {
+		pop_citizen_happiness = 0.05
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+	
+	upgrades = {
+		building_stag_hab_cultural_center
+	}
+}
+
+#Upgraded Habitat Buildings
+
+building_stag_hab_astro_mining_facility = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 200
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		minerals = 4
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+}
+
+building_stag_hab_solar_power_processor = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 250
+	}
+	
+	potential = {
+		planet = {		
+			is_planet_class = pc_habitat
+			has_building = "building_hab_capital"
+			solar_system = {
+				custom_tooltip = {
+					fail_text = "requires_no_black_hole_or_dyson_sphere"
+					NOR = {
+						is_star_class = sc_black_hole
+						has_megastructure = dyson_sphere_3
+						has_megastructure = dyson_sphere_4
+						has_megastructure = dyson_sphere_5
+					}
+				}				
+			}
+		}
+		has_ascension_perk = ap_voidborn		
+	}
+	
+	destroy_if = {
+		planet = {		
+			solar_system = {
+				OR = {
+					is_star_class = sc_black_hole	
+					has_megastructure = dyson_sphere_3
+					has_megastructure = dyson_sphere_4
+					has_megastructure = dyson_sphere_5
+				}
+			}
+		}	
+	}
+	
+	produced_resources = {
+		energy = 6
+	}
+}
+
+building_stag_hab_agri_bay = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 200
+	}
+	
+	potential = {
+		NOT =  { owner = { has_authority = auth_machine_intelligence } }
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		food = 4
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+}
+
+building_stag_hab_laboratory_module = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 250
+	}
+	
+	potential = {
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = 2
+		physics_research = 2
+		society_research = 2
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+}
+
+building_stag_hab_cultural_center = {
+	base_buildtime = 730
+	planet_unique = yes
+	
+	cost = {
+		minerals = 400
+	}
+	
+	potential = {
+		NOT = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	destroy_if = {
+		exists = owner
+		owner = { has_authority = auth_machine_intelligence }
+	}
+	
+	produced_resources = {		
+		unity = 4
+	}
+	
+	planet_modifier = {
+		pop_citizen_happiness = 0.05
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+}
+
+
+
+
+# Full Habitat Buildings
+# Once you have voidborn, skip directly to full Hab buildings
+building_hab_astro_mining_facility = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 200
+	}
+	
+	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		minerals = 4
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+}
+
+building_hab_solar_power_processor = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 250
+	}
+	
+	potential = {
+		planet = {		
+			is_planet_class = pc_habitat
+			has_building = "building_hab_capital"
+			solar_system = {
+				custom_tooltip = {
+					fail_text = "requires_no_black_hole_or_dyson_sphere"
+					NOR = {
+						is_star_class = sc_black_hole
+						has_megastructure = dyson_sphere_3
+						has_megastructure = dyson_sphere_4
+						has_megastructure = dyson_sphere_5
+					}
+				}				
+			}
+		}
+		has_ascension_perk = ap_voidborn		
+	}
+	
+	destroy_if = {
+		planet = {		
+			solar_system = {
+				OR = {
+					is_star_class = sc_black_hole	
+					has_megastructure = dyson_sphere_3
+					has_megastructure = dyson_sphere_4
+					has_megastructure = dyson_sphere_5
+				}
+			}
+		}	
+	}
+	
+	produced_resources = {
+		energy = 6
+	}
+}
+
+building_hab_agri_bay = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 200
+	}
+	
+	potential = {
+		NOT =  { owner = { has_authority = auth_machine_intelligence } }
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		food = 4
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+}
+
+building_hab_laboratory_module = {
+	base_buildtime = 360
+	
+	cost = {
+		minerals = 250
+	}
+	
+	potential = {
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = 2
+		physics_research = 2
+		society_research = 2
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+}
+
+building_hab_cultural_center = {
+	base_buildtime = 730
+	planet_unique = yes
+	
+	cost = {
+		minerals = 400
+	}
+	
+	potential = {
+		NOT = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		planet = {		
+			is_planet_class = pc_habitat
+		}
+		has_ascension_perk = ap_voidborn
+	}
+	
+	allow = {
+		planet = { 
+			has_building = "building_hab_capital"
+		}
+	}
+	
+	destroy_if = {
+		exists = owner
+		owner = { has_authority = auth_machine_intelligence }
+	}
+	
+	produced_resources = {		
+		unity = 4
+	}
+	
+	planet_modifier = {
+		pop_citizen_happiness = 0.05
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+}

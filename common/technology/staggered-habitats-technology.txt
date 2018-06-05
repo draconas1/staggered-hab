@@ -1,10 +1,11 @@
 
+# increase hab size with voidborn
 tech_stag_hab_increase_size1 = {
 	cost = @tier3cost1
-	area = society
-	tier = 2
-	category = { new_worlds }
-	weight = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	weight = @tier3weight1
 	
 	potential = {
 		 has_ascension_perk = ap_voidborn
@@ -21,8 +22,8 @@ tech_stag_hab_increase_size1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
 		modifier = {
@@ -32,14 +33,12 @@ tech_stag_hab_increase_size1 = {
 	}
 	
 	ai_weight = {
-		modifier = {
-			factor = 3
-		}		
+		factor = 1.25	
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
 		modifier = {
@@ -49,12 +48,13 @@ tech_stag_hab_increase_size1 = {
 	}
 }
 
+# increase hab size with master builders
 tech_stag_hab_increase_size2 = {
-	cost = @tier3cost1
-	area = society
-	tier = 2
-	category = { new_worlds }
-	weight = @tier3cost1
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	weight = @tier4weight1
 	
 	potential = {
 		 has_ascension_perk = ap_master_builders
@@ -71,8 +71,8 @@ tech_stag_hab_increase_size2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
 		modifier = {
@@ -82,19 +82,153 @@ tech_stag_hab_increase_size2 = {
 	}
 	
 	ai_weight = {
-		modifier = {
-			factor = 3
-		}		
+		factor = 1.25	
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
 		}	
+	}
+}
+
+
+# clear near solar tiles
+tech_stag_hab_near_solar = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_power_plant_3", "tech_starbase_3" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}			
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_voidborn
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}			
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_voidborn
+		}
+	}
+}
+
+
+
+
+
+# clear asteroid tiles
+tech_stag_hab_asteroid_mining = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_mining_network_3", "tech_starbase_3" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_voidborn
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_voidborn
+		}
+	}
+}
+
+
+# Special hab building techs
+# The others are all unlocked through standard rare techs
+tech_stag_hab_space_elevator = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_mineral_processing_2", "tech_mining_network_4", "tech_construction_templates" }
+	weight = @tier4weight1
+	is_rare = yes
+	
+	potential = {
+		has_ascension_perk = ap_voidborn
+	}
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_communications < 2
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
 	}
 }

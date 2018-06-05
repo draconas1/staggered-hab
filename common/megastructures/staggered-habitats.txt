@@ -59,6 +59,14 @@ habitat_0 = {
 				fail_text = "requires_no_orbital_station"
 				has_orbital_station = no
 			}
+			
+			# balance for habitats
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_moon = yes
+				}
+			}
 		} 
 	}
 
@@ -115,31 +123,17 @@ habitat_0 = {
 					}
 				}
 				
-				random_tile = {
-					limit = {					
-						num_adjacent_tiles = 2
-					}
-					
-					set_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
-
-					every_neighboring_tile = {
-						set_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
-					}
-				}
-				
-				random_tile = {
+				#copy the deposit first, this always seems to appear in the bottom-right corner
+				if = {
 					limit = {
-						num_adjacent_tiles = 2
-						has_blocker = no
+						fromfrom.planet = {
+							colonizeable_planet = no
+						}
 					}
-					
-					set_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
-
-					every_neighboring_tile = {
-						set_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
-					}
+					copy_orbital_tile = fromfrom.planet
 				}
 				
+				#if its a star, place rich energy deposits in the corners
 				if = {
 					limit = {
 						fromfrom.planet = {
@@ -150,17 +144,132 @@ habitat_0 = {
 						limit = {
 							num_adjacent_tiles = 2
 							has_blocker = no
+							has_deposit = no
 						}
 						
 						set_deposit = "d_rich_energy_deposit"
+						set_blocker = "tb_stag_hab_near_solar"
 
 						every_neighboring_tile = {
 							set_deposit = "d_rich_energy_deposit"
+							set_blocker = "tb_stag_hab_near_solar"
+						}
+					}
+					random_tile = {
+						limit = {
+							num_adjacent_tiles = 2
+							has_blocker = no
+							has_deposit = no
+						}
+						
+						set_deposit = "d_rich_energy_deposit"
+						set_blocker = "tb_stag_hab_near_solar"
+
+						every_neighboring_tile = {
+							set_deposit = "d_rich_energy_deposit"
+							set_blocker = "tb_stag_hab_near_solar"
 						}
 					}
 				}
 				
+				#if asteroid set mineral deposits in the corners
+				if = {
+					limit = {
+						fromfrom.planet = {
+							is_planet_class = "pc_asteroid"
+						}
+					}
+					random_tile = {
+						limit = {
+							num_adjacent_tiles = 2
+							has_blocker = no
+							has_deposit = no
+						}
+						
+						set_deposit = "d_rich_mineral_deposit"
+						set_blocker = "tb_stag_hab_asteroid"
+
+						every_neighboring_tile = {
+							set_deposit = "d_rich_mineral_deposit"
+							set_blocker = "tb_stag_hab_asteroid"
+						}
+					}
+					random_tile = {
+						limit = {
+							num_adjacent_tiles = 2
+							has_blocker = no
+							has_deposit = no
+						}
+						
+						set_deposit = "d_rich_mineral_deposit"
+						set_blocker = "tb_stag_hab_asteroid"
+
+						every_neighboring_tile = {
+							set_deposit = "d_rich_mineral_deposit"
+							set_blocker = "tb_stag_hab_asteroid"
+						}
+					}
+				}
 				
+				#if colonisable world, add sync orbit deposits to the corners
+				if = {
+					limit = {
+						fromfrom.planet = {
+							colonizeable_planet = yes
+							has_owner = yes
+						}
+					}
+					random_tile = {
+						limit = {
+							num_adjacent_tiles = 2
+							has_blocker = no
+							has_deposit = no
+						}
+						
+						set_deposit = "d_stag_hab_sync_orbit"
+					}
+					random_tile = {
+						limit = {
+							num_adjacent_tiles = 2
+							has_blocker = no
+							has_deposit = no
+						}
+						
+						set_deposit = "d_stag_hab_sync_orbit"
+					}
+				}
+
+				
+				#set one corner to require voidborn to unlock
+				random_tile = {
+					limit = {					
+						num_adjacent_tiles = 2
+						has_deposit = no
+					}
+					
+					set_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
+
+					every_neighboring_tile = {
+						set_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
+					}
+				}
+				
+				#set the other corner to need master builders to unlock
+				random_tile = {
+					limit = {
+						num_adjacent_tiles = 2
+						has_blocker = no
+						has_deposit = no
+					}
+					
+					set_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
+
+					every_neighboring_tile = {
+						set_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
+					}
+				}				
+				
+				#set ever other tile to be unbuilt habitat
 				while = {
 					limit = {
 						any_tile = { has_blocker = no }
@@ -169,27 +278,25 @@ habitat_0 = {
 						limit = { has_blocker = no }
 						set_blocker = "tb_stag_hab_unbuilt_habitat"
 					}
-				}
+				}						
 				
-				if = {
-					limit = {
-						fromfrom.planet = {
-							colonizeable_planet = no
-						}
-					}
-					copy_orbital_tile = fromfrom.planet
-				}
-				
+				#remove blocker on a random tile for the colony and a random neighbouring tile for pop growth
 				random_tile = {
 					limit = {
 						num_adjacent_tiles = 4
-						not{
-							any_neighboring_tile {
+						not = {
+							any_neighboring_tile = {
 								num_adjacent_tiles < 3
 							}
 						}
 					}
 					remove_blocker = yes
+					random_neighboring_tile = {
+						limit = {
+							num_adjacent_tiles = 4
+						}
+						remove_blocker = yes
+					}
 				}
 
 				set_planet_flag = megastructure
