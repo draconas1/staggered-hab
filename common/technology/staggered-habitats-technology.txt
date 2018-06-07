@@ -119,6 +119,16 @@ tech_stag_hab_near_solar = {
 			factor = 2
 			has_ascension_perk = ap_voidborn
 		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_stag_hab_near_solar"
+					}
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -160,6 +170,16 @@ tech_stag_hab_asteroid_mining = {
 		modifier = {
 			factor = 2
 			has_ascension_perk = ap_voidborn
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_stag_hab_asteroid"
+					}
+				}
+			}
 		}
 	}
 	
@@ -215,10 +235,6 @@ tech_stag_hab_space_elevator = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
-		}
-		modifier = {
-			factor = 0
-			num_communications < 2
 		}
 	}
 	
