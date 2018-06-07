@@ -229,7 +229,7 @@ habitat_0 = {
 						set_deposit = "d_stag_hab_sync_orbit"
 						
 						every_neighboring_tile = {
-							set_deposit = "d_rich_food_deposit"
+							set_deposit = "d_rich_farmland_deposit"
 						}
 					}
 					random_tile = {
@@ -242,7 +242,7 @@ habitat_0 = {
 						set_deposit = "d_stag_hab_sync_orbit"
 						
 						every_neighboring_tile = {
-							set_deposit = "d_rich_food_deposit"
+							set_deposit = "d_rich_farmland_deposit"
 						}
 					}
 				}
