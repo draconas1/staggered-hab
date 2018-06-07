@@ -104,7 +104,7 @@ tech_stag_hab_near_solar = {
 	area = physics
 	tier = 3
 	category = { industry }	
-	prerequisites = { "tech_power_plant_3", "tech_starbase_3" }
+	prerequisites = { "tech_power_plant_3" "tech_starbase_3" }
 	weight = @tier3weight3
 	
 	weight_modifier = {
@@ -146,7 +146,7 @@ tech_stag_hab_asteroid_mining = {
 	area = engineering
 	tier = 3
 	category = { industry }	
-	prerequisites = { "tech_mining_network_3", "tech_starbase_3" }
+	prerequisites = { "tech_mining_network_3" "tech_starbase_3" }
 	weight = @tier3weight3
 	
 	weight_modifier = {
@@ -186,7 +186,7 @@ tech_stag_hab_space_elevator = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }
-	prerequisites = { "tech_mineral_processing_2", "tech_mining_network_4", "tech_construction_templates" }
+	prerequisites = { "tech_mineral_processing_2" "tech_mining_network_4" "tech_construction_templates" }
 	weight = @tier4weight1
 	is_rare = yes
 	

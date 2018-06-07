@@ -15,7 +15,7 @@ building_stag_hab_space_elevator = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}	
 	
 	allow = {
@@ -68,7 +68,7 @@ building_stag_hab_trading_hub = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}	
 	
 	allow = {
@@ -115,7 +115,7 @@ building_stag_hab_weather_control = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}	
 	
 	allow = {
@@ -166,7 +166,7 @@ building_stag_hab_science_centre = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}	
 	
 	allow = {
@@ -223,7 +223,7 @@ building_stag_hab_propaganda_centre = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}	
 	
 	allow = {
@@ -247,7 +247,6 @@ building_stag_hab_propaganda_centre = {
 	
 	planet_modifier  = {
 		pop_government_ethic_attraction = 0.2
-		tile_building_resource_unity_mult = 0.05
 		planet_unrest_mult = -0.1
 	}
 	
@@ -280,7 +279,7 @@ building_stag_hab_astro_mining_facility_1 = {
 			is_planet_class = pc_habitat
 		}
 		not = {
-			has_ascension_perk = ap_voidborn
+			owner = { has_ascension_perk = ap_voidborn }
 		}
 	}
 	
@@ -331,7 +330,7 @@ building_stag_hab_solar_power_processor_1 = {
 			}
 		}
 		not = {
-			has_ascension_perk = ap_voidborn
+			owner = { has_ascension_perk = ap_voidborn }
 		}	
 	}
 	
@@ -347,7 +346,7 @@ building_stag_hab_solar_power_processor_1 = {
 			}
 		}
 		not = {
-			has_ascension_perk = ap_voidborn
+			owner = { has_ascension_perk = ap_voidborn }
 		}	
 	}
 	
@@ -373,7 +372,7 @@ building_stag_hab_agri_bay_1 = {
 			is_planet_class = pc_habitat
 		}
 		not = {
-			has_ascension_perk = ap_voidborn
+			owner = { has_ascension_perk = ap_voidborn }
 		}	
 	}
 	
@@ -408,7 +407,7 @@ building_stag_hab_laboratory_module_1 = {
 			is_planet_class = pc_habitat
 		}
 		not = {
-			has_ascension_perk = ap_voidborn
+			owner = { has_ascension_perk = ap_voidborn }
 		}	
 	}
 
@@ -449,7 +448,7 @@ building_stag_hab_cultural_center_1 = {
 			is_planet_class = pc_habitat
 		}
 		not = {
-			has_ascension_perk = ap_voidborn
+			owner = { has_ascension_perk = ap_voidborn }
 		}	
 	}
 	
@@ -498,7 +497,7 @@ building_stag_hab_astro_mining_facility = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 	
 	allow = {
@@ -539,7 +538,7 @@ building_stag_hab_solar_power_processor = {
 				}				
 			}
 		}
-		has_ascension_perk = ap_voidborn		
+		owner = { has_ascension_perk = ap_voidborn }		
 	}
 	
 	destroy_if = {
@@ -572,7 +571,7 @@ building_stag_hab_agri_bay = {
 		planet = {		
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 	
 	allow = {
@@ -601,7 +600,7 @@ building_stag_hab_laboratory_module = {
 		planet = {		
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 
 	allow = {
@@ -636,7 +635,7 @@ building_stag_hab_cultural_center = {
 		planet = {		
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 	
 	allow = {
@@ -683,7 +682,7 @@ building_hab_astro_mining_facility = {
 		planet = {
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 	
 	allow = {
@@ -724,7 +723,7 @@ building_hab_solar_power_processor = {
 				}				
 			}
 		}
-		has_ascension_perk = ap_voidborn		
+		owner = { has_ascension_perk = ap_voidborn }		
 	}
 	
 	destroy_if = {
@@ -757,7 +756,7 @@ building_hab_agri_bay = {
 		planet = {		
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 	
 	allow = {
@@ -786,7 +785,7 @@ building_hab_laboratory_module = {
 		planet = {		
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 
 	allow = {
@@ -821,7 +820,7 @@ building_hab_cultural_center = {
 		planet = {		
 			is_planet_class = pc_habitat
 		}
-		has_ascension_perk = ap_voidborn
+		owner = { has_ascension_perk = ap_voidborn }
 	}
 	
 	allow = {

@@ -6,15 +6,15 @@ habitat_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 18
+	build_time = 360
 	build_cost = {
-		minerals = 50
-		influence = 5
+		minerals = 500
+		influence = 100
 	}
 	construction_blocks_others = no
 
 	prerequisites = {
-		"tech_starbase_1"
+		"tech_starbase_3"
 	}
 
 	possible = {

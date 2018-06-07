@@ -4,6 +4,7 @@ tb_stag_hab_unbuilt_habitat = {
 	cost = {
 		energy = 50
 		minerals = 500
+		influence = 10
 	}
 	
 	spawn_chance = {
@@ -14,10 +15,11 @@ tb_stag_hab_unbuilt_habitat = {
 }
 
 tb_stag_hab_unbuilt_habitat_voidborn = {
-	time = 180
+	time = 360
 	cost = {
 		energy = 150
-		minerals = 500
+		minerals = 1000
+		influence = 10
 	}
 	
 	spawn_chance = {
@@ -30,10 +32,11 @@ tb_stag_hab_unbuilt_habitat_voidborn = {
 }
 
 tb_stag_hab_unbuilt_habitat_master_builder = {
-	time = 180
+	time = 360
 	cost = {
 		energy = 150
-		minerals = 500
+		minerals = 1000
+		influence = 10
 	}
 	
 	spawn_chance = {
@@ -50,6 +53,7 @@ tb_stag_hab_near_solar = {
 	cost = {
 		energy = 150
 		minerals = 500
+		influence = 10
 	}
 	
 	spawn_chance = {
@@ -66,6 +70,7 @@ tb_stag_hab_asteroid = {
 	cost = {
 		energy = 150
 		minerals = 500
+		influence = 10
 	}
 	
 	spawn_chance = {
