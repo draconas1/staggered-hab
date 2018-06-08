@@ -6,7 +6,7 @@ habitat_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 360
+	build_time = 1000
 	build_cost = {
 		minerals = 500
 		influence = 100

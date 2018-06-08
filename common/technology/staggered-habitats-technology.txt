@@ -107,6 +107,13 @@ tech_stag_hab_near_solar = {
 	prerequisites = { "tech_power_plant_3" "tech_starbase_3" }
 	weight = @tier3weight3
 	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		tile_blockers = 0.5
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -158,6 +165,13 @@ tech_stag_hab_asteroid_mining = {
 	category = { industry }	
 	prerequisites = { "tech_mining_network_3" "tech_starbase_3" }
 	weight = @tier3weight3
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		tile_blockers = 0.5
+	}
 	
 	weight_modifier = {
 		modifier = {
