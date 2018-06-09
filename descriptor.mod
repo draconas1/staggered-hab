@@ -5,5 +5,4 @@ tags={
 	"Megastructures"
 	"Overhaul"
 }
-remote_file_id="32423642"
 supported_version="2.1.*"

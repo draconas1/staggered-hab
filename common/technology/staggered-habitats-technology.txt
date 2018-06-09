@@ -220,7 +220,7 @@ tech_stag_hab_space_elevator = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }
-	prerequisites = { "tech_mineral_processing_2" "tech_mining_network_4" "tech_construction_templates" }
+	prerequisites = { "tech_mineral_processing_2" "tech_mining_network_4" }
 	weight = @tier4weight1
 	is_rare = yes
 	
