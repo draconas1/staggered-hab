@@ -3,6 +3,6 @@ path="mod/staggered-hab"
 tags={
 	"Gameplay"
 	"Megastructures"
-	"Overhaul"
 }
 supported_version="2.1.*"
+picture="stag-hab-preview.png"
