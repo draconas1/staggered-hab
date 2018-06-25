@@ -10,7 +10,7 @@ staggered_habitat = {
 	build_time = 1000
 	build_cost = {
 		minerals = 500
-		influence = 100
+		influence = 200
 	}
 	construction_blocks_others = no
 
