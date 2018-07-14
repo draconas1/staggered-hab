@@ -80,7 +80,7 @@ staggered_habitat = {
 	# root = system
 	# from = country	
 	ai_weight = {
-		factor = 10
+		factor = 2
 	
 		modifier = {
 			factor = 0
@@ -400,13 +400,20 @@ habitat_0 = {
 					is_moon = yes
 				}
 			}
+			
+			custom_tooltip = {
+				fail_text = "requires_not_black_hole"
+				NOT = {
+					is_star_class = sc_black_hole
+				}
+			}
 		} 
 	}
 
 	# root = system
 	# from = country	
 	ai_weight = {
-		factor = 10
+		factor = 5
 	
 		modifier = {
 			factor = 0
