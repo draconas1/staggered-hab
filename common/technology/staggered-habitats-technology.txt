@@ -30,6 +30,14 @@ tech_stag_hab_increase_size1 = {
 			factor = 0
 			num_owned_planets < 2
 		}
+		modifier = {
+			factor = 10			
+			any_owned_planet =  {
+				any_tile = {
+					has_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -39,6 +47,14 @@ tech_stag_hab_increase_size1 = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 5			
+			any_owned_planet =  {
+				any_tile = {
+					has_blocker = "tb_stag_hab_unbuilt_habitat_voidborn"
+				}
 			}
 		}
 		modifier = {
@@ -79,6 +95,14 @@ tech_stag_hab_increase_size2 = {
 			factor = 0
 			num_owned_planets < 2
 		}
+		modifier = {
+			factor = 10			
+			any_owned_planet =  {
+				any_tile = {
+					has_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -93,14 +117,22 @@ tech_stag_hab_increase_size2 = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
-		}	
+		}
+		modifier = {
+			factor = 5			
+			any_owned_planet =  {
+				any_tile = {
+					has_blocker = "tb_stag_hab_unbuilt_habitat_master_builder"
+				}
+			}
+		}		
 	}
 }
 
 
 # clear near solar tiles
 tech_stag_hab_near_solar = {
-	cost = @tier3cost3
+	cost = @tier3cost2
 	area = physics
 	tier = 3
 	category = { industry }	
@@ -123,7 +155,7 @@ tech_stag_hab_near_solar = {
 			}			
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			has_ascension_perk = ap_voidborn
 		}
 		modifier = {
@@ -150,6 +182,14 @@ tech_stag_hab_near_solar = {
 			factor = 2
 			has_ascension_perk = ap_voidborn
 		}
+		modifier = {
+			factor = 5			
+			any_owned_planet =  {
+				any_tile = {
+					has_blocker = "tb_stag_hab_near_solar"
+				}
+			}
+		}
 	}
 }
 
@@ -159,7 +199,7 @@ tech_stag_hab_near_solar = {
 
 # clear asteroid tiles
 tech_stag_hab_asteroid_mining = {
-	cost = @tier3cost3
+	cost = @tier3cost2
 	area = engineering
 	tier = 3
 	category = { industry }	
@@ -182,7 +222,7 @@ tech_stag_hab_asteroid_mining = {
 			}			
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			has_ascension_perk = ap_voidborn
 		}
 		modifier = {
@@ -208,6 +248,14 @@ tech_stag_hab_asteroid_mining = {
 		modifier = {
 			factor = 2
 			has_ascension_perk = ap_voidborn
+		}
+		modifier = {
+			factor = 5			
+			any_owned_planet =  {
+				any_tile = {
+					has_blocker = "tb_stag_hab_asteroid"
+				}
+			}
 		}
 	}
 }
