@@ -407,6 +407,26 @@ habitat_0 = {
 					is_star_class = sc_black_hole
 				}
 			}
+			
+			# to build no blockers habs on asteroid or stars
+			# you need the relevant blocker tech
+			custom_tooltip = {
+				fail_text = "requires_relevant_blocker_technology_solar"
+				OR = {
+					is_star = no
+					from = { has_technology = tech_stag_hab_near_solar }
+				}				
+			}
+			
+			# to build no blockers habs on asteroid or stars
+			# you need the relevant blocker tech
+			custom_tooltip = {
+				fail_text = "requires_relevant_blocker_technology_asteroid"
+				OR = {
+					is_asteroid = no
+					from = { has_technology = tech_stag_hab_asteroid_mining }
+				}				
+			}
 		} 
 	}
 
