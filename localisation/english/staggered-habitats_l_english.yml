@@ -3,6 +3,7 @@
  ### Staggered Habitat text
   
  requires_sync_orbit:0 "Must be built in synchronous orbit."
+ requires_not_blackhole:0 "Habitat cannot be built around a black hole, nobody wants to gaze into the Abyss constantly."
  
  tb_stag_hab_unbuilt_habitat:0 "£blocker  Unbuilt Habitat Station"
  tb_stag_hab_unbuilt_habitat_desc:0 "Empty space just waiting additional habitat construction"

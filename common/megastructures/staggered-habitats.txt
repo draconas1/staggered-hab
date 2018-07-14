@@ -68,6 +68,12 @@ staggered_habitat = {
 					is_moon = yes
 				}
 			}
+			custom_tooltip = {
+				fail_text = "requires_not_black_hole"
+				NOT = {
+					is_star_class = sc_black_hole
+				}
+			}
 		} 
 	}
 
