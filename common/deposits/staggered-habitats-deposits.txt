@@ -10,7 +10,7 @@ d_stag_hab_unbuilt_habitat = {
 		category = deposit_blockers
 		cost = {
             energy = 100
-            minerals = 1000
+            alloys = 1000
 		}
 	}
 		
@@ -33,7 +33,7 @@ d_stag_hab_unbuilt_habitat_voidborn = {
 		category = deposit_blockers
 		cost = {
             energy = 100
-            minerals = 1000
+            alloys = 1000
 		}
 	}
 		
