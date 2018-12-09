@@ -4,5 +4,5 @@ tags={
 	"Gameplay"
 	"Megastructures"
 }
-supported_version="2.1.*"
+supported_version="2.2.*"
 picture="stag-hab-preview.png"

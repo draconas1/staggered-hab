@@ -1,66 +1,22 @@
 ﻿l_english:
 
- ### Staggered Habitat text
-  
- requires_sync_orbit:0 "Must be built in synchronous orbit"
+ ### Staggered Habitat text 
+
  requires_not_black_hole:0 "Habitat cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
- requires_relevant_blocker_technology_solar:0 "Must have the £blocker Near Solar clearing technology to build a complete habitat"
- requires_relevant_blocker_technology_asteroid:0 "Must have the £blocker Asteroid Surface clearing technology to build a complete habitat"
  
- tb_stag_hab_unbuilt_habitat:0 "£blocker  Unbuilt Habitat Station"
- tb_stag_hab_unbuilt_habitat_desc:0 "Empty space just waiting additional habitat construction"
- tb_stag_hab_unbuilt_habitat_voidborn:0 "£blocker  Unstable structual area"
- tb_stag_hab_unbuilt_habitat_voidborn_desc:0 "Only a race that was Voidborn could build here safely"
- tb_stag_hab_unbuilt_habitat_master_builder:0 "£blocker  Dangerous structural area"
- tb_stag_hab_unbuilt_habitat_master_builder_desc:0 "Truly we would need to be Master Builders to build in this section without tearing the habitat apart"
- tb_stag_hab_asteroid:0 "£blocker  Asteroid Surface"
- tb_stag_hab_asteroid_desc:0 "This habitat location is on the surface of an asteroid and will require special engineering to access safely"
- tb_stag_hab_near_solar:0 "£blocker  Near Solar"
- tb_stag_hab_near_solar_desc:0 "This habitat location skirts the edge of space around the star and will need detailed understanding of the physics involved to access safely"
+ d_stag_hab_unbuilt_habitat:0 "£blocker  Unbuilt Habitat Station"
+ d_stag_hab_unbuilt_habitat_desc:0 "Empty space just waiting additional habitat construction"
+ d_stag_hab_unbuilt_habitat_voidborn:0 "£blocker  Unstable structual area"
+ d_stag_hab_unbuilt_habitat_voidborn_desc:0 "Only a race that was Voidborn could build here safely"
+ d_stag_hab_unbuilt_habitat_master_builder:0 "£blocker  Dangerous structural area"
+ d_stag_hab_unbuilt_habitat_master_builder_desc:0 "Truly we would need to be Master Builders to build in this section without tearing the habitat apart"
  
- sr_stag_hab_sync_orbit:0 "Synchronous Orbit"
- sr_stag_hab_sync_orbit_desc:0 "This habitat location seems to hover over the parent body, making it ideal for some uses."
-
- d_stag_hab_sync_orbit:0 "Synchronous Orbit"
- d_stag_hab_sync_orbit_desc:0 "This habitat location seems to hover over the parent body, making it ideal for some uses."
-
- building_stag_hab_space_elevator:0 "Space Elevator"
- building_stag_hab_space_elevator_desc:0 "The ability to cheapy move resources between the habitat and planet is a huge boon to industry."
- building_stag_hab_trading_hub:0 "Orbital Trading Hub"
- building_stag_hab_trading_hub_desc:0 "The central point for commerce between the planet and the stars."
- building_stag_hab_weather_control:0 "Agricultural Coordination Centre"
- building_stag_hab_weather_control_desc:0 "Weather satelites and global coordination with the planet below maximise food production."
- building_stag_hab_science_centre:0 "Orbital Science Hub"
- building_stag_hab_science_centre_desc:0 "Able to converse with all research facilities on the planet below, a hub for knowledge and information exchange."
- building_stag_hab_propaganda_centre:0 "Propoganda Centre"
- building_stag_hab_propaganda_centre_desc:0 "Headquarters of the thought police, monitoring communciations and trends to keep the population in line."
- 
- building_stag_hab_astro_mining_facility_1:0 "Mineral Extractor I"
- building_stag_hab_astro_mining_facility_1_desc:0 "Basic mineral refining and extraction from captured asteroids."
- building_stag_hab_solar_power_processor_1:0 "Solar Power Processor I"
- building_stag_hab_solar_power_processor_1_desc:0 "Basic Solar Power Processors distribute solar energy captured in arrays of solar panels located on the exterior hull of the Habitat."
- building_stag_hab_agri_bay_1:0 "Hydroponics Bay I"
- building_stag_hab_agri_bay_1_desc:0 "A section of the Habitat turned into a hydroponics bay for growing vegtables - beats space rations!"
- building_stag_hab_laboratory_module_1:0 "Low Gravity Lab I"
- building_stag_hab_laboratory_module_1_desc:0 "Habitat module for conducting scientific research in low gravity"
- building_stag_hab_cultural_center_1:0 "Leisure Pod I"
- building_stag_hab_cultural_center_1_desc:0 "Basic communal facilities for inhabitents to relax and unwind."
-
- staggered_habitat_MEGASTRUCTURE_DETAILS:1 "An §Y$staggered_habitat$§! is a theoretically self-sustaining space station designed to be expanded as the population grows"
- staggered_habitat_CONSTRUCTION_INFO_DELAYED:2 "A Modular Habitat starts with only a single tile, and can only house habitat-specific Â£building  Â§YBuildingsÂ§!."
+ staggered_habitat_MEGASTRUCTURE_DETAILS:1 "A §Y$staggered_habitat$§! is a theoretically self-sustaining space station designed to be expanded as the population grows"
+ staggered_habitat_CONSTRUCTION_INFO_DELAYED:2 "A Modular Habitat starts with only a single district."
  staggered_habitat:0 "Modular Habitat"
- staggered_habitat_DESC:0 "A Habitation Station orbiting a colonized planet, capable of housing a number of Â§HPopsÂ§! and Â§HBuildingsÂ§! away from the surface."
+ staggered_habitat_DESC:0 "A Habitation Station orbiting an uninhabitable planet, capable of housing a number of §HPops§! and §HBuildings§! away from the surface."
  
- tech_stag_hab_asteroid_mining:0 "Asteroid Mining"
- tech_stag_hab_asteroid_mining_desc:0 "An network of support structures allows expansion to otherwise uninhabitable bodies."
- tech_stag_hab_near_solar:0 "Near Solar Construction"
- tech_stag_hab_near_solar_desc:0 "Advances in radiation and heat shielding allows expansion to otherwise unihabitable areas."
  tech_stag_hab_increase_size1:0 "Improved Habitat Structures"
  tech_stag_hab_increase_size1_desc:0 "As we become more at home in the void, so we are able to increase the size of our orbital habitats."
  tech_stag_hab_increase_size2:0 "Huge Habitat Structures"
  tech_stag_hab_increase_size2_desc:0 "Our skill with construction makes orbital structures possible that were science fiction just a generation ago."
- tech_stag_hab_space_elevator:0 "Space Elevator"
- tech_stag_hab_space_elevator_desc:0 "Once the dream of science fiction, we have the ability to make leaving the planet no more difficult than crossing a continent"
- 
- ### while the modifier exists, there is no text for it in vanilla
- tile_resource_unity_add:0 "Unity Output"

@@ -1,17 +1,49 @@
-# Possible Deposit Variables
-# modifier - weight, will replace the weight value
-# modifier - factor, will multiply the weight value
-# resources, resource and amount
-# station = station class in orbit to gather
-# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+# Blockers that can appear on staggered habs
 
-d_stag_hab_sync_orbit = {
-	resources = {
-		sr_stag_hab_sync_orbit = 1
-	}
-	is_orbital_slot = no
+d_stag_hab_unbuilt_habitat = {	
+	time = 270
 	
-	drop_weight = {
-		weight = 0
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+            energy = 100
+            minerals = 1000
+		}
 	}
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+d_stag_hab_unbuilt_habitat_voidborn = {	
+	time = 270
+	
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+            energy = 100
+            minerals = 1000
+		}
+	}
+		
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+
+	ai_weight = {
+		weight = 1
+    }
+    
+    prerequisites = { "tech_stag_hab_increase_size1" }
 }
