@@ -1,0 +1,40 @@
+ap_voidborn = {
+	potential = {
+		host_has_dlc = "Utopia"
+		NOT = {
+			has_ascension_perk = ap_voidborn
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_starbase_4"
+			has_technology = tech_starbase_4			
+		}
+	}
+	
+	# This is the only change, remove the novoidborn penalty from all habitats.
+	on_enabled = {
+        custom_tooltip = "allow_habitats"
+        hidden_effect = {
+			every_planet_within_border = {
+				limit = {
+					has_modifier = staggered_habitat_no_voidborn 
+				}
+				remove_modifier = staggered_habitat_no_voidborn
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+}

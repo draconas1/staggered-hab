@@ -2,21 +2,16 @@
 
  ### Staggered Habitat text 
 
- requires_not_black_hole:0 "Habitat cannot be built around a black hole, nobody wants to gaze into the abyss constantly"
- 
- d_stag_hab_unbuilt_habitat:0 "£blocker  Unbuilt Habitat Station"
- d_stag_hab_unbuilt_habitat_desc:0 "Empty space just waiting additional habitat construction"
- d_stag_hab_unbuilt_habitat_voidborn:0 "£blocker  Unstable structual area"
- d_stag_hab_unbuilt_habitat_voidborn_desc:0 "Only a race that was Voidborn could build here safely"
- d_stag_hab_unbuilt_habitat_master_builder:0 "£blocker  Dangerous structural area"
- d_stag_hab_unbuilt_habitat_master_builder_desc:0 "Truly we would need to be Master Builders to build in this section without tearing the habitat apart"
- 
  staggered_habitat_MEGASTRUCTURE_DETAILS:1 "A §Y$staggered_habitat$§! is a theoretically self-sustaining space station designed to be expanded as the population grows"
  staggered_habitat_CONSTRUCTION_INFO_DELAYED:2 "A Modular Habitat starts with only a single district."
  staggered_habitat:0 "Modular Habitat"
  staggered_habitat_DESC:0 "A Habitation Station orbiting an uninhabitable planet, capable of housing a number of §HPops§! and §HBuildings§! away from the surface."
- 
- tech_stag_hab_increase_size1:0 "Improved Habitat Structures"
- tech_stag_hab_increase_size1_desc:0 "As we become more at home in the void, so we are able to increase the size of our orbital habitats."
- tech_stag_hab_increase_size2:0 "Huge Habitat Structures"
- tech_stag_hab_increase_size2_desc:0 "Our skill with construction makes orbital structures possible that were science fiction just a generation ago."
+  
+ staggered_habitat_no_voidborn:0 "Inefficient habitat usage"
+ staggered_habitat_no_voidborn_desc:0 "We have colonised space, but until we can be called Voidborn our people are less productive here"
+
+ decision_enlarge_hab:0 "Increase Habitat Size"
+ decision_enlarge_hab_desc:0 "Enlarge the habitat such that it can support an additional district"
+
+ decision_fully_enlarge_hab:0 "Fully Construct Habitat"
+ decision_fully_enlarge_hab_desc:0 "The time for slow expansion is over, enlarge this habitat as far as our engineering abilities will let us"

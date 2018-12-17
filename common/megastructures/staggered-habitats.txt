@@ -8,13 +8,13 @@ staggered_habitat = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
-	build_time = 1800
+	build_time = 720
 
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 500
-			influence = 200
+			influence = 100
 		}
 	}
 	construction_blocks_others = no
@@ -84,8 +84,9 @@ staggered_habitat = {
 
 	# root = system
 	# from = country	
+	# waiting making them less good than going straight to full habitats
 	ai_weight = {
-		factor = 10
+		factor = 5
 	
 		modifier = {
 			factor = 0
@@ -111,7 +112,8 @@ staggered_habitat = {
 			orbit_location = yes
 			orbit_angle_offset = 45
 			orbit_distance_offset = 9.899
-			size = 6
+			# size 1 habitat
+			size = 1
 			has_ring = no
 			
 			init_effect = {
@@ -127,12 +129,6 @@ staggered_habitat = {
 				set_all_comms_surveyed = yes
 				clear_blockers = yes
 
-				add_deposit = d_stag_hab_unbuilt_habitat
-				add_deposit = d_stag_hab_unbuilt_habitat
-				add_deposit = d_stag_hab_unbuilt_habitat_voidborn
-				add_deposit = d_stag_hab_unbuilt_habitat_voidborn
-				add_deposit = d_stag_hab_unbuilt_habitat_voidborn
-
 				if = {
 					limit = {
 						from = { has_ascension_perk = ap_master_builders }
@@ -140,6 +136,16 @@ staggered_habitat = {
 					}
 					add_modifier = {
 						modifier = master_builders_habitats
+						days = -1
+					}
+				}
+				# other difference, if you don't have voidborn, your habitat is basically a bit rubbish
+				if = {
+					limit = {
+						NOT = { from = { has_ascension_perk = ap_voidborn } }
+					}
+					add_modifier = {
+						modifier = staggered_habitat_no_voidborn
 						days = -1
 					}
 				}
