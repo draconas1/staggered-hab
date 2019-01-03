@@ -84,22 +84,9 @@ staggered_habitat = {
 
 	# root = system
 	# from = country	
-	# waiting making them less good than going straight to full habitats
+	# AI remains fucking stupid around habitats. 
 	ai_weight = {
-		factor = 5
-	
-		modifier = {
-			factor = 0
-			starbase = { NOT = { has_starbase_size >= starbase_starport } }
-		}
-
-		modifier = {
-			factor = 0.1
-			any_neighbor_system = {
-				exists = owner
-				owner = { NOT = { is_same_value = from } }
-			}
-		}
+		factor = 0
 	}
 	
 	on_build_start = {}
