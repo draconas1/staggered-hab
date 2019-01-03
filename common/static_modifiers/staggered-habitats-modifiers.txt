@@ -2,12 +2,14 @@
 staggered_habitat_no_voidborn = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
     icon_frame = 1
-    planet_jobs_specialist_produces_mult = -0.3
-    planet_jobs_worker_produces_mult = -0.3
-    planet_jobs_slave_produces_mult = -0.3
-    trade_value_mult = -0.25
-    pop_amenities_usage_mult = 0.25
-    pop_housing_usage_mult = 0.5
-    planet_buildings_upkeep_mult = 0.5
-	planet_districts_upkeep_mult = 0.5
+    planet_jobs_specialist_produces_mult = -0.2
+    planet_jobs_worker_produces_mult = -0.2
+    planet_jobs_slave_produces_mult = -0.2
+    planet_jobs_robotic_produces_mult = -0.2
+    planet_jobs_complex_drone_produces_mult = -0.2
+    planet_jobs_simple_drone_produces_mult = -0.2
+    trade_value_mult = -0.2
+    pop_amenities_usage_mult = 0.2
+    pop_housing_usage_mult = 0.2
+	planet_districts_upkeep_mult = 0.2
 }
