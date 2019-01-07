@@ -1,0 +1,17 @@
+l_simp_chinese:
+
+ ### Staggered Habitat text 
+
+ staggered_habitat_MEGASTRUCTURE_DETAILS:1 "§Y$staggered_habitat$§!是一种理论上自我维持的空间站，被设计用于扩大人口增长。"
+ staggered_habitat_CONSTRUCTION_INFO_DELAYED:2 "模块化轨道栖所最初只有一个区划。"
+ staggered_habitat:0 "模块化轨道栖所"
+ staggered_habitat_DESC:0 "围绕着非宜居星球的轨道基地，他能在远离星球表面的地方支持一定数量的§H人口§!和§H建筑§!。"
+  
+ staggered_habitat_no_voidborn:0 "轨道栖所低利用率"
+ staggered_habitat_no_voidborn_desc:0 "我们已经殖民了太空，但我们的人民在那里生产力低下，除非我们称得上是太空族民。"
+
+ decision_enlarge_hab:0 "增大轨道栖所规模"
+ decision_enlarge_hab_desc:0 "扩大轨道栖所，以便它支持额外的一个区划。"
+
+ decision_fully_enlarge_hab:0 "全面建设轨道栖所"
+ decision_fully_enlarge_hab_desc:0 "缓慢扩张的时代结束了，扩大该轨道栖所到我们工程能力的极限。"
