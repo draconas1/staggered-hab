@@ -15,3 +15,6 @@
 
  decision_fully_enlarge_hab:0 "Fully Construct Habitat"
  decision_fully_enlarge_hab_desc:0 "The time for slow expansion is over, enlarge this habitat as far as our engineering abilities will let us"
+
+ decision_remove_inefficiency_with_voidborn:0 "Remove §Y$staggered_habitat_no_voidborn$§! penalty"
+ decision_remove_inefficiency_with_voidborn_desc:0 "This should have been removed automatically with the Voidborn Ascension Perk.  There may be a mod conflict.  This decision will fix it (remember to run on all your staggered habs)"

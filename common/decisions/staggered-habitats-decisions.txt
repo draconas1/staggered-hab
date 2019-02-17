@@ -108,3 +108,30 @@ decision_fully_enlarge_hab = {
 		weight = 0
 	}
 }
+
+
+# Fix for if voidborn doesn't work due to mod conflict
+decision_remove_inefficiency_with_voidborn = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+        is_habitat = yes
+		has_modifier = staggered_habitat_no_voidborn
+		owner = {
+			has_ascension_perk = ap_voidborn
+		}
+	}
+	
+	effect = {
+		remove_modifier = staggered_habitat_no_voidborn
+	}
+	
+	# AI will always do it if it didn't happen immiedately.
+	ai_weight = {
+		weight = 100
+	}
+}
